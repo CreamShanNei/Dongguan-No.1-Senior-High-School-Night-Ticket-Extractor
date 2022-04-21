@@ -91,7 +91,7 @@
                     }
 
                 TotleTicketCount = TempChickenKababCount + TempShrimpKababCount + TempChickenTikkaCount;
-                Thread.Sleep(500);
+                Thread.Sleep(100);
                 } 
             }
 
@@ -117,10 +117,10 @@
                 {
                     Array.Resize(ref GotNameList,GotNameList.Length + 1);
                     GotNameList[i] = NameList[NameRdType];  //把抽取的名单添加到已抽取的名单列表中
-                    Console.WriteLine("[抽取] 当前抽取名单：{0}", NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Green);  //输出抽取的名单
+                    Console.WriteLine("[抽取] 当前抽到人名：{0}", NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Green);  //输出抽取的名单
                 }
 
-                Thread.Sleep(500);  //等待1秒
+                Thread.Sleep(100);  //等待0.1秒
             }            
 
             Console.WriteLine("[信息] 所有内容抽取完毕，5秒钟后输出本次抽取的结果");
@@ -130,13 +130,13 @@
             Console.WriteLine("\n");
             for(int i = 0 ; i < GotTicketList.Length - 2 ; i ++)
             {
-                Console.WriteLine("[抽取] 已抽取的名单：{0}，对应的夜宵券：{1}", GotNameList[i],GotTicketList[i],Console.ForegroundColor = ConsoleColor.Yellow);
+                Console.WriteLine("[抽取] 已抽取的人名：{0}，对应的夜宵券：{1}", GotNameList[i],GotTicketList[i],Console.ForegroundColor = ConsoleColor.Yellow);
             }
 
 
             //Part 4 存储已抽取的名单
             //将已抽取的名单写入文件
-            Console.WriteLine("[信息] 正在将已抽取的名单写入文件中");
+            Console.WriteLine("[信息] 正在将已抽取的名单写入文件中",Console.ForegroundColor = ConsoleColor.White);
             string FilePath = System.Environment.CurrentDirectory + "\\" + "已抽取名单.txt";
             FileStream fs = new FileStream(FilePath,FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
@@ -152,7 +152,7 @@
             fs.Close();
 
             //结果写入完毕
-            Console.WriteLine("[信息] 已抽取的名单已经写入文件，5分钟后程序自动退出");
+            Console.WriteLine("[信息] 已抽取的名单已经写入文件，5分钟后程序自动退出",Console.ForegroundColor = ConsoleColor.White);
             Thread.Sleep(300000);  //等待5分钟
 
         }
