@@ -25,6 +25,7 @@
             Console.WriteLine("[关于] 程序版本：2.0",Console.ForegroundColor = ConsoleColor.Yellow);
             Console.WriteLine("[关于] 程序更新时间：2022年4月20日",Console.ForegroundColor = ConsoleColor.Yellow);
             Console.WriteLine("[关于] 本程序仅供学习交流，请勿用于商业用途",Console.ForegroundColor = ConsoleColor.Yellow);
+            Console.WriteLine("[关于] 项目仓库地址：https://github.com/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor",Console.ForegroundColor = ConsoleColor.Yellow);
             Console.WriteLine("[关于] 本程序仅供东莞市第一中学使用，如有侵权请联系管理员",Console.ForegroundColor = ConsoleColor.Yellow);
 
             //Part 1 输入夜宵券数量
@@ -86,7 +87,7 @@
                     }
                     else
                     {
-                        Console.WriteLine("[抽取] 抽到了一张重复的票，重新抽取",Console.ForegroundColor = ConsoleColor.Yellow);
+                        Console.WriteLine("[重复] 抽到了一张重复的票，重新抽取",Console.ForegroundColor = ConsoleColor.Red);
                         i--;
                     }
 
@@ -105,12 +106,12 @@
                 int NameRdType = NameRd.Next(0,NameListCount);  //生成随机数，用于抽取名单的下标
                 if(GotNameList.Contains(NameList[NameRdType]))
                 {
-                    Console.WriteLine("[调试] 当前抽到人名：{0}，该人名包含在已抽过人的本次抽取名单中，重新抽取",NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Yellow);
+                    Console.WriteLine("[重复] 当前抽到人名：{0}，该人名包含在已抽过人的本次抽取名单中，重新抽取",NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Red);
                     i--;
                 }
                 else if(GotNameListFromFile.Contains(NameList[NameRdType]))
                 {
-                    Console.WriteLine("[调试] 当前抽到人名：{0}，该人名包含在已抽过人的过去抽取名单文件中，重新抽取",NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Yellow);
+                    Console.WriteLine("[重复] 当前抽到人名：{0}，该人名包含在已抽过人的过去抽取名单文件中，重新抽取",NameList[NameRdType],Console.ForegroundColor = ConsoleColor.Red);
                     i--;
                 }
                 else
