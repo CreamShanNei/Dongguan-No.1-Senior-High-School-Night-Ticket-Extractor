@@ -1,8 +1,13 @@
-# Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor
-东莞一中夜宵券抽取器
+<p align="center"><a href="https://dgsdyzx.dgjy.net" target="_blank"><img width="1000" src="https://dgsdyzx.dgjy.net/images/dgyzlogo.png"></a></p>
+
+<p align="center">
+  <a href="https://github.com/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor/releases/latest"><img src="https://img.shields.io/github/v/release/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor?display_name=tag&label=%E6%9C%80%E6%96%B0%E6%9E%84%E5%BB%BA%E7%89%88%E6%9C%AC" alt="GitHub release"></a>
+  <a href="https://goreportcard.com/report/github.com/portapps/portapps"><img src="https://img.shields.io/bitbucket/issues/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor?label=%E6%8F%90%E4%BA%A4%E6%84%8F%E8%A7%81" alt="Go Report"></a>
+  <br /><a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/cran/l/devtools?label=%E5%BC%80%E6%BA%90%E5%8D%8F%E8%AE%AE" alt="Licenes"></a>
+</p>
 
 ## 友情链接
-- [东莞一中官网](https://dgsdyzx.dgjy.net/index.html)
+- [东莞一中官网](https://dgsdyzx.dgjy.net)
 - [项目仓库地址](https://github.com/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor)
 - [我的Github仓库地址](https://github.com/CreamShanNei)
 
@@ -16,7 +21,7 @@
 - 如果您有任何问题或者建议，请在[Issues](https://github.com/CreamShanNei/Dongguan-No.1-Senior-High-School-Night-Ticket-Extractor/issues)中提交您的意见
 
 **以下是一些注意事项：**
-> 1.若您的网络情况不能下载，请联系我私下传送Release包
+> 1.若您的网络情况不能下载，请联系我私下获取Release包
 
 > 2.请使用`7-zip`或其他`支持7-zip格式压缩包`的压缩软件解压Release包
 
