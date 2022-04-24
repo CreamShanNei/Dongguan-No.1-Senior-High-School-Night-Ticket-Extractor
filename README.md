@@ -23,7 +23,7 @@
 **以下是一些注意事项：**
 > 1.若您的网络情况不能下载，请联系我私下获取Release包
 
-> 2.请使用`7-zip`或其他`支持7-zip格式压缩包`的压缩软件解压Release包
+> 2.请使用[`7-zip`](https://www.7-zip.org/)或其他[`支持7-zip格式压缩包（如Bandzip）`](https://www.bandisoft.com/bandizip/)的压缩软件解压Release包
 
 > 3.若您的程序无法正常运行，请安装包内的`无法运行安装这个`程序安装[`.NET Framework 6.0`](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/runtime-6.0.4-windows-x64-installer)
 
