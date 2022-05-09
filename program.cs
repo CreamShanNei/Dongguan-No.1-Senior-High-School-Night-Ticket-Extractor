@@ -129,7 +129,7 @@
             Thread.Sleep(5000);  //等待5秒
 
             Console.WriteLine("\n");
-            for(int i = 0 ; i < GotTicketList.Length - 2 ; i ++)
+            for(int i = 0 ; i < GotTicketList.Length; i ++)
             {
                 Console.WriteLine("[抽取] 已抽取的人名：{0}，对应的夜宵券：{1}", GotNameList[i],GotTicketList[i],Console.ForegroundColor = ConsoleColor.Yellow);
             }
