@@ -167,6 +167,15 @@
             var TempNameList = new string[] { "张三", "李四", "王五" };
             System.IO.File.WriteAllLines(TempNameListPath, TempNameList);
             Console.WriteLine("[文件处理] 已创建默认文件 名单.txt",Console.ForegroundColor = ConsoleColor.Green);
+
+            Console.WriteLine("[错误] 无法找到文件 已抽取名单.txt",Console.ForegroundColor = ConsoleColor.Red);
+            Console.WriteLine("[错误] 请检查文件是否存在",Console.ForegroundColor = ConsoleColor.Red);
+            Console.WriteLine("[文件处理] 正在创建默认文件 已抽取名单.txt",Console.ForegroundColor = ConsoleColor.Green);
+            var TempNameListPath1 = System.Environment.CurrentDirectory + "\\已抽取名单.txt";
+            var TempNameList1 = new string[] { "张三", "李四", "王五" };
+            System.IO.File.WriteAllLines(TempNameListPath1, TempNameList1);
+            Console.WriteLine("[文件处理] 已创建默认文件 名单.txt",Console.ForegroundColor = ConsoleColor.Green);
+
             Console.WriteLine("[信息] 请重新运行程序",Console.ForegroundColor = ConsoleColor.White);
             Thread.Sleep(5000);
         }
